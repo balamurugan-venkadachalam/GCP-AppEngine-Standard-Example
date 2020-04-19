@@ -80,12 +80,32 @@ https://20200419t154727-dot-test-dot-first-gcp-project.uc.r.appspot.com
 more details please refer [here](https://cloud.google.com/appengine/docs/standard/java/an-overview-of-app-engine#versions_and_instances)  
 
 ## Instance Class
+| Instance Class | Memory Limit | CPU Limit | Supported Scaling Types |
+| -------------- | ------------ | --------- | ----------------------- |
+| F1 (default)	| 256 MB | 600 MHz	| automatic
+|F2	|512 MB	|1.2 GHz	|automatic
+|F4	|1024 MB	|2.4 GHz	|automatic
+|F4_1G	|2048 MB	|2.4 GHz	|automatic
+|B1	|256 MB	|600 MHz	|manual, basic
+|B2 (default)	|512 MB	|1.2 GHz	|manual, basic
+|B4	1024 |MB	|2.4 GHz	|manual, basic
+|B4_1G	|2048 MB	|2.4 GHz	|manual, basic
+|B8|	2048 MB	|4.8 GHz	|manual, basic
+
 Please refer [here](https://cloud.google.com/appengine/docs/standard)
 
 ## Spring Boot Application
 
 Because App engine standard is running in a Jetty Web Server, the default configuration for a Spring Boot application will not work. 
 This causes several conflicts because Spring Boot uses an embedded Tomcat Web Server. More information about the configuration of a Spring Boot application for the standard environment can be found [here](https://github.com/GoogleCloudPlatform/getting-started-java/tree/master/appengine-standard-java8/springboot-appengine-standard).
+
+## Debug
+GCP console -> App Engine -> Dashboad -> select service -> Debug -> select load appropriate code from github or gcp repo  
+
+ - [x] https://cloud.google.com/debugger/docs/source-options
+
+ - [x] https://cloud.google.com/eclipse/docs/running-and-debugging
+
 
  ## Reference 
  - [x] https://cloud.google.com/appengine/docs/standard/java/how-to
