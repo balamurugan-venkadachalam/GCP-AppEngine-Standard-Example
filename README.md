@@ -73,6 +73,10 @@ https://cloud.google.com/appengine/docs/standard/java/how-instances-are-managed#
 ```
 https://VERSION_ID-dot-SERVICE_ID-dot-PROJECT_ID.REGION_ID.r.appspot.com
 ```
+For example
+```
+https://20200419t154727-dot-test-dot-first-gcp-project.uc.r.appspot.com
+```
 more details please refer [here](https://cloud.google.com/appengine/docs/standard/java/an-overview-of-app-engine#versions_and_instances)  
 
 ## Instance Class
